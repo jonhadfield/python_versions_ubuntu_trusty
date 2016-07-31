@@ -12,7 +12,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     . ~/.profile && \
     pyenv install 2.6.9 && \
     pyenv install 2.7.12 && \
-    pyenv install 3.5.2
+    pyenv install 3.5.2 && \
+    pyenv global 3.5.2 && \
+    pip install pip tox -U
 
 ENV HOME  /root
 ENV PYENV_ROOT $HOME/.pyenv
