@@ -1,7 +1,7 @@
 FROM ubuntu:trusty
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    make build-essential libssl-dev zlib1g-dev libbz2-dev \
+    make build-essential libssl-dev zlib1g-dev libbz2-dev libyaml-dev \
     libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils ca-certificates git && \
     rm -rf /var/lib/apt/lists/* && \
     curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash && \
